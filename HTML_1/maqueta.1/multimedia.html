@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <litle>Lista de etiquetas</litle>
+    <link rel="stylesheet" href="./tema.css"/>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <main>
+        <header id="hprincipal">
+            <div class="logo"></div>
+            <h1>Lista de etiquetas</h1>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="INDEX.html">ESTRUCTURALES</a></li>
+                <li><a class="activo" href="MULTIMEDIA.html">MULTIMEDIA</a></li>
+                <li><a href="CONTROL.html">CONTROL</a></li>
+            </ul>
+        </nav>
+
+        <div id="contenedor_principal">
+            <!--Cabecera de la tabla-->
+            <table>
+                <caption>etiquetas estructurales</caption>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripcion</th>
+                        <th>Propiedades</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>< a ></td>
+                        <td>Link </td>
+                        <td>Propiedades href</td>
+                        <td>.....</td>
+                    </tr>
+                    <tr>
+                        <td>< div ></td>
+                        <td>div </td>
+                        <td>Propiedades id</td>
+                        <td>.....</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <br>
+                                < source src="C:/maqueta.1/assets/horse.ogg" type="audio/ogg">
+                                <br>
+                                < source src="C:/maqueta.1/assets/horse.mp3" type="audio/mp3">
+                                <br>
+                                Your browser does not support the audio element.
+                                <br>
+                            </audio>
+                        </td>
+                        <td>
+                            <p>
+                                Before HTML5, audio files could only played in a browser whit a plugin-in (like flash). 
+                                The HTML5 <b>audio</b> element specifies a standard way to embed audio in a web page.
+                            </p>
+                        </td>
+                        <td>
+                            <p><b>autoplay:</b> Un atributo booleano; si se especifica.</p>
+                            <p><b>autobuffer:</b>Un atributo booleano; si se especifica.s</p>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="./assets/horse.ogg" type="audio/ogg">
+                                <source src="./assets/horse.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer id="fprincipal">
+            <div>Todos los derechos reservados por el SENA.</div>
+        </footer>
+    </main>
+</body>
+</html>

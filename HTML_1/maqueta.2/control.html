@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <litle></litle>
+    <link rel="stylesheet" href="./tema.css"/>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <main>
+        <header id="hprincipal">
+            <div class="logo"></div>
+            <h1>Lista de etiquetas</h1>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="INDEX.html">ESTRUCTURALES</a></li>
+                <li><a href="MULTIMEDIA.html">MULTIMEDIA</a></li>
+                <li><a class="activo" href="CONTROL.html">CONTROL</a></li>
+            </ul>
+        </nav>
+
+        <div id="contenedor_principal">
+            <!--Cabecera de la tabla-->
+            <table>
+                <caption>Etiquetas estructurales</caption>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripcion</th>
+                        <th>Propiedades</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>< input > </a></td>
+                        <td>Ingreso texto </td>
+                        <td>Se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario.</td>
+                        <td>< input type="text" ></td>
+                    </tr>
+                    <tr>
+                        <td>< menu></td>
+                        <td>Menu / contenido </td>
+                        <td>Representa una lista desordenada de elementos id</td>
+                        <td>< div class="news"><br/>
+                            < a href="#">NASA’s Webb Delivers Deepest Infrared Image of Universe Yet< /a><br/>
+                            < menu><br/>
+                              < li>< button id="save">Save for later< /button>< /li><br/>
+                              < li>< button id="share">Share this news< /button>< /li><br/>
+                            < /menu>
+                          < /div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< nav ></td>
+                        <td>Link de navegacion</td>
+                        <td>Representa una sección de una página cuyo propósito es proporcionar enlaces de navegación,</td>
+                        <td>< nav class="menu"><br/>
+                            < ul><br/>
+                              < li>< a href="#">Inicio< /a>< /li><br/>
+                              < li>< a href="#">Sobre nosotros< /a>< /li><br/>
+                              < li>< a href="#">Contacto< /a>< /li><br/>
+                            < /ul><br/>
+                          < /nav><br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< base ></td>
+                        <td>Link de navegacion</td>
+                        <td>Especifica la dirección URL base que se utilizará para todas las direcciones URL relativas contenidas dentro de un documento</td>
+                        <td>< base href="http://www.example.com/page.html" /><br/>
+                            < base target="_blank" href="http://www.example.com/page.html" /></td><br/>
+                    </tr>
+                    <tr>
+                        <td>< button></td>
+                        <td>Click</td>
+                        <td>Representa un elemento cliqueable de tipo botón que 
+                            puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.</td>
+                        <td>< button name="button">Click me< /button></td>
+                    </tr>
+                    <tr>
+                        <td>< datalist ></td>
+                        <td>Lista / Opcion</td>
+                        <td>Contiene un conjunto de elementos < option> que representan los valores disponibles para otros controles.</td>
+                        <td>< label>Choose a browser from this list: < input list="browsers" name="myBrowser"/>< /label><br/>
+                          < datalist id="browsers"><br/>
+                            < option value="Chrome"></ option><br/>
+                            < option value="Firefox">< /option><br/>
+                            < option value="Internet Explorer">< /option><br/>
+                            < option value="Opera">< /option><br/>
+                            < option value="Safari">< /option><br/>
+                            < option value="Microsoft Edge">< /option><br/>
+                          < /datalist></td><br/>
+                    </tr>
+                    <tr>
+                        <td>< fieldset ></td>
+                        <td>Contenido</td>
+                        <td>El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario.</td>
+                        <td> < fieldset><br/>
+                            < legend>Información Personal< /legend><br/>
+                            Nombre: < input name='nombre' type='text' tabindex='1'><br/>
+                            Apellidos: < input name='apellidos' type='text' tabindex='2'><br/>
+                           < /fieldset></td><br/>
+                    </tr>
+                    <tr>
+                        <td>< link ></td>
+                        <td>Click</td>
+                        <td>Especifica la relación entre el documento actual y un recurso externo. 
+                            Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación.</td>
+                        <td>< link href="default.css" rel="stylesheet" title="Default Style" />
+                            < link href="fancy.css" rel="alternate stylesheet" title="Fancy" /></td>
+                    </tr>
+                    <tr>
+                        <td>< samp ></td>
+                        <td>Contenido</td>
+                        <td>Se utiliza para incluir texto en línea que representa una muestra (o cita) de la salida de un programa de ordenador.</td>
+                        <td>< p>
+                            < samp>Keyboard not found <br/>
+                            Press F1 to continue< /samp>
+                          < /p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>< output ></td>
+                        <td>Contenido</td>
+                        <td>Es un elemento contenedor en el que un sitio o 
+                            aplicación puede inyectar los resultados de un cálculo o el resultado de una acción del usuario.</td>
+                        <td>< form id="example-form"><br/>
+                            < input type="range" id="b" name="b" value="50" /> +<br/>
+                            < input type="number" id="a" name="a" value="10" /> =<br/>
+                            < output name="result" for="a b">60< /output><br/>
+                            < /form></td>
+                    </tr
+                    <tr>
+                        <td>< details ></td>
+                        <td>Contenido</td>
+                        <td>Es usado como un widget de revelación a través del cual el usuario puede obtener información adicional</td>
+                        <td>< details><br/>
+                            < summary>Some details< /summary><br/>
+                            < p>More info about the details.< /p><br/>
+                          < /details><br/>
+                        </td>
+                    </tr
+
+                </tbody>
+            </table>
+        </div>
+
+        <footer id="fprincipal">
+            <div>Todos los derechos reservados por el SENA.</div>
+        </footer>
+    </main>
+</body>
+</html>

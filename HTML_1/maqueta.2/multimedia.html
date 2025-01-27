@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <litle></litle>
+    <link rel="stylesheet" href="./tema.css"/>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <main>
+        <header id="hprincipal">
+            <div class="logo"></div>
+            <h1>Lista de etiquetas</h1>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="INDEX.html">ESTRUCTURALES</a></li>
+                <li><a class="activo" href="MULTIMEDIA.html">MULTIMEDIA</a></li>
+                <li><a href="CONTROL.html">CONTROL</a></li>
+            </ul>
+        </nav>
+
+        <div id="contenedor_principal">
+            <!--Cabecera de la tabla-->
+            <table>
+                <caption>Etiquetas estructurales</caption>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripcion</th>
+                        <th>Propiedades</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>< img ></td>
+                        <td>imagen </td>
+                        <td>Es la más común para insertar imágenes de multimedia</td>
+                        <td><img src="./assets/cpu1.avif" height="150px" width="150px"></td>
+                    </tr>
+                    <tr>
+                        <td>< audio ></td>
+                        <td> Audio </td>
+                        <td>
+                            <p><b>autoplay:</b> Un atributo booleano; si se especifica.</p>
+                            <p><b>autobuffer:</b>Un atributo booleano; si se especifica.s</p>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="./assets/horse.ogg" type="audio/ogg">
+                                <source src="./assets/horse.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </td>
+                        <tr>
+                            <td>< video ></td>
+                            <td>Define el tipo del documento </td>
+                            <td>Reproduce un vídeo, comenzando tan pronto como la recepción de video sea 
+                                suficiente para permitir la reproducción sin pausas para descargar más</td>
+                            <td> <video width="340" height="280" preload="metadata" controls>
+                                <source src="./assets/video1.mp4" >
+                                <source src="./assets/video1.webm" >
+                                <source src="./assets/video1.ogv" >
+                                <img src="imagen.png" alt="Vídeo no soportado">
+                                Este navegador no soporta contenido multimedia.
+                            </video>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>< audio controls></audio></td>
+                            <td>Audio</td>
+                            <td>Se usa para insertar contenido de audio en un documento HTML</td>
+                            <td>< audio controls><br/>
+                                < source src="./assets/horse.ogg" type="audio/ogg"><br/>
+                                < source src="./assets/horse.mp3" type="audio/mp3"><br/>
+                                Your browser does not support the audio element.<br/>
+                            < /audio><br/>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>< audio autoplay ></td>
+                            <td>Video</td>
+                            <td>Esta etiqueta se utiliza para hacer que el archivo de audio se reproduzca 
+                                automáticamente cuando la página web se carga.</td>
+                            <td>< video width="340" height="280" preload="metadata" controls><br/>
+                                < source src="./assets/video1.mp4" ><br/>
+                                < source src="./assets/video1.webm" ><br/>
+                                < source src="./assets/video1.ogv" ><br/>
+                                < img src="imagen.png" alt="Vídeo no soportado"><br/>
+                                Este navegador no soporta contenido multimedia.<br/>
+                            < /video></td><br/>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer id="fprincipal">
+            <div>Todos los derechos reservados por el SENA.</div>
+        </footer>
+    </main>
+</body>
+</html>

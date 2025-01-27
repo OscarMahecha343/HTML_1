@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: "Arial", Georgia, Serif;
+    transition: all linear 0.3s;
+    /*background: url(./medios/cortes/bg.png);*/
+    
+    
+}
+
+#nav_principal, 
+#contenedor_principal, 
+#footer_principal .content_principal{
+    position: relative;
+    width: 956px;
+    margin: auto;
+}
+
+#nav_principal{
+    margin-top: 18px;
+    /*border: 1px solid #666;*/
+    border-bottom: 0px;
+}
+
+#contenedor_principal{
+    top: -20px;
+    height: 867px;
+    margin: auto;
+    /*border: 1px solid #666;
+    background-color: rgba(226, 229,229, 0.5);*/
+    background: url(./medios/cortes/bgp.png);
+}
+
+#footer_principal{
+    position: relative;
+    width: 957px;
+    height: 258px;
+    margin: auto;
+    /*border: 1px solid #666;
+    background-color: rgba(226, 229,229, 0.5);*/
+    background-image: url(./medios/cortes/bgf.png);
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: rgb(3, 3, 15);
+    text-decoration: none;
+    background-image: url(./medios/cortes/bgm.png);
+}
+
+.div_clear_both{
+    position: relative;
+    width: 100px;
+    clear: both;
+}
+
+body{
+    background-image: url(./medios/cortes/bg.png);
+}
